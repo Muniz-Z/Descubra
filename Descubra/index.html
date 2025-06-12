@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Para Você 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container etapa1" id="etapa1">
+    <h1>Deseja desbravar o mundo de Alice?</h1>
+    <div class="botoes">
+      <button onclick="responderPreparada(true)">Sim</button>
+      <button id="naoPreparada" onclick="responderPreparada(false)">Não</button>
+    </div>
+  </div>
+
+  <div class="container etapa2" id="etapa2" style="display: none;">
+    <h1>Dastan promete não julgar?</h1>
+    <div class="botoes">
+      <button onclick="responderJulgar(true)">Sim</button>
+      <button onclick="responderJulgar(false)">Não</button>
+    </div>
+    <p id="mensagemJulgar" style="display: none; margin-top: 15px; color: #e06398; font-weight: bold;"></p>
+  </div>
+
+  <div class="container etapa3" id="etapa3" style="display: none;">
+    <h1>Escolha sabiamente 💖</h1>
+    <p>Vamos decidir na sorte? Escolha</p>
+    <div class="botoes">
+      <button onclick="escolherVersao('implicito')">1</button>
+      <button onclick="escolherVersao('explicito')">2</button>
+    </div>
+
+    <div id="pdfLinks" style="display: none; margin-top: 20px;">
+      <h2>Espero que goste Dastan 💌</h2>
+      <div class="botoes">
+        <a id="linkEscolhido" href="#" download></a>
+        <a href="arquivos/Adeus de Alice.pdf" download>📄 Adeus de Alice</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

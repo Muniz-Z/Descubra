@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Uncial Antiqua';
+  src: url('fonts/UncialAntiqua-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Aladin';
+  src: url('fonts/Aladin-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('fonts/DancingScript-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-image 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  margin: 60px auto;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.etapa1 {
+  font-family: 'Uncial Antiqua', cursive;
+}
+
+.etapa2 {
+  font-family: 'Aladin', cursive;
+}
+
+.etapa3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+button, a {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff85b3;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover, a:hover {
+  background-color: #e06398;
+}
+
+#mensagemJulgar {
+  transition: all 0.3s ease;
+}
